@@ -16,9 +16,19 @@ body {
 .title {
     font-size: 1.7rem;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     color: #e74c3c;
     letter-spacing: 1px;
+}
+.session-state {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 24px;
+    padding: 8px 16px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    display: inline-block;
 }
 .timer-outer {
     display: flex;
@@ -42,6 +52,32 @@ body {
     color: #e74c3c;
     letter-spacing: 2px;
     text-shadow: 0 2px 8px rgba(231,76,60,0.10);
+}
+.mode-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.mode-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    border: 2px solid #f5b7b1;
+    border-radius: 20px;
+    background: #fff;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+}
+.mode-btn:hover {
+    background: #ffe5e0;
+    transform: translateY(-2px);
+}
+.mode-btn.active {
+    background: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
 }
 .timer-controls {
     margin-top: 24px;

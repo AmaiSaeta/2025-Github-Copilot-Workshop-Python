@@ -9,10 +9,16 @@
 <body>
     <div class="container">
         <h1 class="title">Pomodoro Timer</h1>
+        <div class="session-state" id="session-state">作業中</div>
         <div class="timer-outer">
             <div class="timer-inner">
                 <span class="timer-display" id="timer-display">25:00</span>
             </div>
+        </div>
+        <div class="mode-buttons">
+            <button id="work-btn" class="mode-btn active">作業</button>
+            <button id="short-break-btn" class="mode-btn">短い休憩</button>
+            <button id="long-break-btn" class="mode-btn">長い休憩</button>
         </div>
         <div class="timer-controls">
             <button id="start-btn" class="main-btn">▶</button>
